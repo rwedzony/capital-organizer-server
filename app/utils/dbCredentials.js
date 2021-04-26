@@ -1,4 +1,4 @@
 module.exports = {
-    login:"root",
-    password:""
+    login:"sql11408512",
+    password:"i9TjMlYZAC"
 }
