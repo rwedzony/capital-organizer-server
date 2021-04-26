@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+ mysqldb:
+  restart: always
+  image: mysql:5.7
+  environment:
+   MYSQL_ALLOW_EMPTY_PASSWORD: 1 
+   MYSQL_DATABASE: capital_organizer
+  ports:
+   - 3306:3306
+
+
+ phpmyadmin:
+  image: phpmyadmin
+  ports:
+   - 8080:80
+  environment:
+   PMA_HOST: mysqldb
+
+    
