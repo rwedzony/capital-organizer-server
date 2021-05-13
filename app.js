@@ -8,7 +8,7 @@ const userRouter = require("./routes/users");
 const capitalsRouter = require("./routes/capitals");
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
